@@ -26,7 +26,10 @@ Before you begin, make sure you have the following installed:
 * install the required Python packages using pip. The necessary dependencies are listed in the requirements.txt file.
  ''' pip install -r requirements.txt '''
 * This will install all the necessary libraries like PyMuPDF, pymongo, requests, and others required for running the pipeline
-
+##  Install and Configure MongoDB
+* **Download MongoDB**: Follow the instructions from the official MongoDB website to download and install MongoDB.
+* **Start the MongoDB Server**: Once installed, you can start the MongoDB service using the following command
+> On Windows, you can start it by running '''mongod.exe'''
 # System Requirements
 Before running the project, make sure your system meets the following requirements:
 ## Operating System:
