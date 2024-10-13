@@ -18,6 +18,11 @@ Before you begin, make sure you have the following installed:
 * MongoDB
 * Required Python packages
 
+# Setup Instructions
+## Clone the Repository
+'''git clone  https://github.com/shashanktm56/wasserstoff.git
+   cd wasserstoff'''
+
 # System Requirements
 Before running the project, make sure your system meets the following requirements:
 ## Operating System:
