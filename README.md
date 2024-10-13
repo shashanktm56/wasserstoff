@@ -29,7 +29,8 @@ Before you begin, make sure you have the following installed:
 ##  Install and Configure MongoDB
 * **Download MongoDB**: Follow the instructions from the official MongoDB website to download and install MongoDB.
 * **Start the MongoDB Server**: Once installed, you can start the MongoDB service using the following command
-> On Windows, you can start it by running '''mongod.exe'''
+> On Windows, you can start it by running
+>  'mongod.exe'
 # System Requirements
 Before running the project, make sure your system meets the following requirements:
 ## Operating System:
