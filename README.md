@@ -34,7 +34,7 @@ Before you begin, make sure you have the following installed:
 * **Create Database and Collection**: By default, the pipeline will create a MongoDB database called ''pdf_database'' and a collection called ''pdf_collection''. You do not need to manually create these; they will be automatically set up when the pipeline runs for the first time.
 ## Download and Prepare Dataset
 Place your PDF dataset in a folder and create a JSON file (Dataset.json) with the PDF IDs and their URLs. The structure of the JSON file should look like this:
-''
+
 ## Check the Results in MongoDB
 After processing, you can view the results (PDF metadata, summaries, and keywords) in MongoDB using MongoDB Compass or any MongoDB client of your choice. You will find the data stored in the pdf_database under the pdf_collection.
 
