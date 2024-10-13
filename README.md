@@ -1,31 +1,19 @@
 # PDF Processing Pipeline
 This project is a PDF processing pipeline that fetches, summarizes, and extracts keywords from PDF documents. The summaries and keywords are stored in a MongoDB database.
 ## Table of Contents
-* Features
-* Prerequisites
 * Setup Instructions
+* System Requirements
+* Explanation of the Solution
   
-## Features
-* Fetch PDFs from URLs.
-* Process multiple PDFs in parallel.
-* Summarize content based on document length.
-* Extract relevant keywords.
-* Store metadata in MongoDB.
 
-## Prerequisites
-Before you begin, make sure you have the following installed:
-* Python 3.x
-* MongoDB
-* Required Python packages
 
 # Setup Instructions
 ## Clone the Repository
 ''' git clone  https://github.com/shashanktm56/wasserstoff.git
    cd wasserstoff '''
 ##  Install Python and Required Packages
-* install the required Python packages using pip. The necessary dependencies are listed in the requirements.txt file.
-*  ''' pip install -r requirements.txt '''
-* This will install all the necessary libraries like PyMuPDF, pymongo, requests, and others required for running the pipeline
+* install python and the required Python packages which are essential for pipeline
+* This may include all the necessary libraries like PyMuPDF, pymongo, requests, and others required for running the pipeline
 ##  Install and Configure MongoDB
 * **Download MongoDB**: Follow the instructions from the official MongoDB website to download and install MongoDB.
 * **Start the MongoDB Server**: Once installed, you can start the MongoDB service using the following command
@@ -33,10 +21,10 @@ Before you begin, make sure you have the following installed:
   'mongod.exe'
 * **Create Database and Collection**: By default, the pipeline will create a MongoDB database called ''pdf_database'' and a collection called ''pdf_collection''. You do not need to manually create these; they will be automatically set up when the pipeline runs for the first time.
 ## Download and Prepare Dataset
-Place your PDF dataset in a folder and create a JSON file (Dataset.json) with the PDF IDs and their URLs. The structure of the JSON file should look like this:
+the dataset which was provided to us was in JSON format i had to download and use it for the pipeline
 
 ## Check the Results in MongoDB
-After processing, you can view the results (PDF metadata, summaries, and keywords) in MongoDB using MongoDB Compass or any MongoDB client of your choice. You will find the data stored in the pdf_database under the pdf_collection.
+After processing, you can view the results (PDF metadata, summaries, and keywords) in MongoDB using MongoDB Compass. i found the data stored in the pdf_database under the pdf_collection.
 
 
 # System Requirements
@@ -46,7 +34,7 @@ Before running the project, make sure your system meets the following requiremen
 ## Python Version:
 * Python 3.7 or higher
 ## Python Packages:
-Required Python packages are listed in requirements.txt. They will be installed via pip:
+Required Python packages need to be installed via pip:
 * pymupdf (for PDF processing)
 * pymongo (for MongoDB integration)
 * requests (for fetching PDFs from URLs)
@@ -54,8 +42,8 @@ Required Python packages are listed in requirements.txt. They will be installed 
 ## MongoDB:
 * MongoDB server installed and running locally or accessible via a remote connection.
 ## Memory and Processing Power:
-* At least 4GB of RAM recommended for processing PDFs and concurrency operations.
-* Multi-core CPU recommended for faster parallel processing.
+* i had more than 4GB of RAM  for processing PDFs and concurrency operations.
+* used Multi-core CPU  for faster parallel processing.
 
 
 # Explanation of the Solution
