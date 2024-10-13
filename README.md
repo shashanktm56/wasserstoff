@@ -4,3 +4,10 @@ This project is a PDF processing pipeline that fetches, summarizes, and extracts
 * Features
 * Prerequisites
 * Setup Instructions
+  
+## Features
+* Fetch PDFs from URLs.
+* Process multiple PDFs in parallel.
+* Summarize content based on document length.
+* Extract relevant keywords.
+* Store metadata in MongoDB.
