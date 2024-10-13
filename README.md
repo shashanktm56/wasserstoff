@@ -24,13 +24,21 @@ Before you begin, make sure you have the following installed:
    cd wasserstoff '''
 ##  Install Python and Required Packages
 * install the required Python packages using pip. The necessary dependencies are listed in the requirements.txt file.
- ''' pip install -r requirements.txt '''
+*  ''' pip install -r requirements.txt '''
 * This will install all the necessary libraries like PyMuPDF, pymongo, requests, and others required for running the pipeline
 ##  Install and Configure MongoDB
 * **Download MongoDB**: Follow the instructions from the official MongoDB website to download and install MongoDB.
 * **Start the MongoDB Server**: Once installed, you can start the MongoDB service using the following command
-> On Windows, you can start it by running
->  'mongod.exe'
+* On Windows, you can start it by running
+  'mongod.exe'
+* **Create Database and Collection**: By default, the pipeline will create a MongoDB database called ''pdf_database'' and a collection called ''pdf_collection''. You do not need to manually create these; they will be automatically set up when the pipeline runs for the first time.
+## Download and Prepare Dataset
+Place your PDF dataset in a folder and create a JSON file (Dataset.json) with the PDF IDs and their URLs. The structure of the JSON file should look like this:
+''
+## Check the Results in MongoDB
+After processing, you can view the results (PDF metadata, summaries, and keywords) in MongoDB using MongoDB Compass or any MongoDB client of your choice. You will find the data stored in the pdf_database under the pdf_collection.
+
+
 # System Requirements
 Before running the project, make sure your system meets the following requirements:
 ## Operating System:
