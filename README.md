@@ -43,4 +43,4 @@ Required Python packages are listed in requirements.txt. They will be installed 
 * The ingestion process is concurrent (parallel), allowing multiple PDFs to be downloaded and processed simultaneously using Python’s ThreadPoolExecutor. This improves performance and ensures efficient use of system resources.
 ## Summarization & Keyword Extraction
 Each PDF is processed by two core components:
-* "Custom Summarizer": Extracts a concise summary of the document. The summary logic adapts to the length of the document, ensuring that short documents get shorter summaries while longer ones are summarized more comprehensively.
+* **Custom Summarizer**: Extracts a concise summary of the document. The summary logic adapts to the length of the document, ensuring that short documents get shorter summaries while longer ones are summarized more comprehensively.
