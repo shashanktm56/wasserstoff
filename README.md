@@ -11,3 +11,9 @@ This project is a PDF processing pipeline that fetches, summarizes, and extracts
 * Summarize content based on document length.
 * Extract relevant keywords.
 * Store metadata in MongoDB.
+
+## Prerequisites
+Before you begin, make sure you have the following installed:
+* Python 3.x
+* MongoDB
+* Required Python packages
