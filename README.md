@@ -35,3 +35,12 @@ Required Python packages are listed in requirements.txt. They will be installed 
 ## Memory and Processing Power:
 * At least 4GB of RAM recommended for processing PDFs and concurrency operations.
 * Multi-core CPU recommended for faster parallel processing.
+
+
+# Explanation of the Solution
+## PDF Ingestion & Parsing
+* The project starts by fetching a dataset of PDFs from a local file that contains PDF IDs and their corresponding URLs. The system downloads these PDFs if they aren’t already available locally.
+* The ingestion process is concurrent (parallel), allowing multiple PDFs to be downloaded and processed simultaneously using Python’s ThreadPoolExecutor. This improves performance and ensures efficient use of system resources.
+## Summarization & Keyword Extraction
+Each PDF is processed by two core components:
+* "Custom Summarizer": Extracts a concise summary of the document. The summary logic adapts to the length of the document, ensuring that short documents get shorter summaries while longer ones are summarized more comprehensively.
