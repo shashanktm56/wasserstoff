@@ -23,9 +23,9 @@ Before you begin, make sure you have the following installed:
 ''' git clone  https://github.com/shashanktm56/wasserstoff.git
    cd wasserstoff '''
 ##  Install Python and Required Packages
-install the required Python packages using pip. The necessary dependencies are listed in the requirements.txt file.
+* install the required Python packages using pip. The necessary dependencies are listed in the requirements.txt file.
  ''' pip install -r requirements.txt '''
- This will install all the necessary libraries like PyMuPDF, pymongo, requests, and others required for running the pipeline
+ * This will install all the necessary libraries like PyMuPDF, pymongo, requests, and others required for running the pipeline
 
 # System Requirements
 Before running the project, make sure your system meets the following requirements:
